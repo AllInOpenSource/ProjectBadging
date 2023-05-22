@@ -1,4 +1,4 @@
-import Home from './Home/Home';
-import About from './About/About';
-import DeiBadge from './DeiBadge/DeiBadge';
-export { Home, About, DeiBadge };
+import Home from "./Home/Home";
+import Projects from "./Projects/Projects";
+
+export { Home, Projects };
