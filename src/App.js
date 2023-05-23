@@ -6,6 +6,8 @@ const App = () => {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route exact path="/badge" element={<DeiBadge />} />
       </Routes>
       <Routes>
         <Route exact path="/projects" element={<Projects />} />

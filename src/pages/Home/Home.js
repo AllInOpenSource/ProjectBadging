@@ -63,18 +63,18 @@ const Home = () => {
 				</div>
 			</div>
 
-			<section className="container">
-				<div className="faq">
-					<h2>Still Have Questions</h2>
-					{faqData.map(({ question, answer }, id) => {
-						return <Faq key={id} question={question} answer={answer} />;
-					})}
-				</div>
-			</section>
+      <section className="container">
+        <div className="faq">
+          <h2>Still Have Questions</h2>
+          {faqData.map(({ question, answer }, id) => {
+            return <Faq key={id} question={question} answer={answer} />;
+          })}
+        </div>
+      </section>
 
-			<Footer />
-		</div>
-	);
+      <Footer />
+    </div>
+  );
 };
 
 export default Home;

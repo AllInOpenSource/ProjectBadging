@@ -33,7 +33,7 @@ const Header = () => {
           </Link>
         </ul>
         <Link className="get-started" to="/">
-          {" "}
+          {' '}
           Get Started
         </Link>
        
