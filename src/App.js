@@ -5,6 +5,7 @@ import {
 	Projects,
 	GetStartedBadging,
 	SelectProjectRepo,
+	SuccessfullyBadged,
 } from "./pages";
 import {
 	WhatIsDeiBadging,
@@ -34,6 +35,9 @@ const App = () => {
 						<Route path="/badge" element={<GetStartedBadging />} />
 						<Route path="/select-project" element={<SelectProjectRepo />} />
 						<Route exact path="/projects" element={<Projects />} />
+						<Route exact path="/project-badging-successfull/congratulations" 
+						element={<SuccessfullyBadged />} 
+						/>
 						<Route path="*" element={<h1>Not Found</h1>} />
 					</Routes>
 				</DataProvider>

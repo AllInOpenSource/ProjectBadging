@@ -9,4 +9,6 @@ import About from './AboutDeiBadging/About';
 
 import SelectProjectRepo from './SelectProjectRepo/SelectProjectRepo';
 
-export { Home, About, Projects, GetStartedBadging, SelectProjectRepo };
+import SuccessfullyBadged from './ProjectBadgingSuccess/ProjectBadgingSuccess';
+
+export { Home, About, Projects, GetStartedBadging, SelectProjectRepo, SuccessfullyBadged };
