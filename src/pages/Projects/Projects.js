@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../../assets/styles/global.scss';
 import './project.scss';
 import { Footer, Header } from '../../components';
-import Jumbotron from '../../components/Jumbotron/jumbotron';
+import Jumbotron from '../../components/Jumbotron/Jumbotron';
 import { Pagination, TablePagination } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
@@ -122,7 +122,14 @@ const Projects = () => {
   return (
     <div>
       <Header />
-      <Jumbotron />
+      <Jumbotron
+        title="DEI Badged Projects"
+        description="Lorem ipsum dolor sit amet consectetur. Sed risus ultrices sit nibh sed.
+        Interdum urna molestie fames porttitor elementum a diam laoreet. Sed
+        tempor habitant phasellus velit sagittis mauris lorem pretium.
+        Arcu neque id duis eu pellentesque in amet et. Ipsum ultricies
+        a etiam est. Viverra eleifend tortor iaculis fringilla sed."
+      />
       <section className="project">
         <div className="badging">
           <div className="badging-table">

@@ -4,39 +4,45 @@
 
 .carousel-container {
   position: relative;
-  margin-bottom: -100px;
+  margin-top: -13px;
+  // margin-bottom: -20px;
+
+  width: 100%;
+
+  .getStarted-button {
+    margin-bottom: 100px;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    button {
+      display: block;
+      border: none;
+      color: black;
+      background-color: $secondaryBtnColor2;
+      width: 380px;
+      padding: 23px 47px;
+      font-size: 16px;
+      font-size: $font-family_2;
+      font-weight: 500;
+      img {
+        padding-top: 4px;
+        margin-left: 20px;
+      }
+    }
+  }
+
   .card-carousel {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 340px;
-    // margin: -50px auto -90px auto;
+    height: 240px;
+    margin-top: 50px;
     align-items: center;
-    position: relative;
 
-    .card {
-      background: #030303;
-      border-image: linear-gradient(
-          161deg,
-          rgb(174, 173, 171, 0.9),
-          rgba(115, 115, 115, 0.5)
-        )
-        1;
-      border-width: 1px;
-      border-style: solid;
-      border-bottom: 0;
-      padding: 20px;
-
-      width: 376px;
-      height: 200px;
-      /* transition: all 0.75s ease; */
-      opacity: 0;
-      position: absolute;
-      // left: 50%;
-      // margin-left: 100px;
-      transform: scale(0.85) translateY(-70px);
-    }
     .card-carousel-btn {
       background-color: #030303;
       // border-radius: 2px;
@@ -51,6 +57,7 @@
       top: 35px;
       right: 20px;
       border: 1px solid #454c53;
+      display: none;
     }
     .hidden_title {
       position: absolute;
@@ -91,7 +98,7 @@
       border-bottom: 0;
       margin: 70px 0 0 -5px;
       width: 295px;
-      height: 120px;
+      height: 160px;
       position: relative;
       z-index: 1;
     }
@@ -110,7 +117,7 @@
       width: 330px;
       // margin: auto;
       z-index: 2;
-      height: 210px;
+      height: 260px;
     }
     .card.active .hidden_title {
       display: none;
@@ -120,13 +127,20 @@
       transform: scale(1.1) translateY(-20px);
       opacity: 1;
       z-index: 1;
-      width: 350px;
+      width: 290px;
       background: #030303;
-      border: 1px solid #222d33;
+      border: 1px solid #aeadab;
       box-shadow: 0px 17px 10px 32px rgba(0, 0, 0, 0.2);
-      display: none;
+      display: block;
+      height: 170px;
 
       .blank_div {
+        display: none;
+      }
+      .copy {
+        width: 250px;
+      }
+      .hidden_title {
         display: none;
       }
     }
@@ -135,13 +149,20 @@
       transform: scale(1.1) translateY(-50px);
       z-index: 0;
       opacity: 1;
-      width: 300px;
+      width: 270px;
       background: #030303;
-      border: 1px solid #222d33;
+      border: 1px solid #aeadab;
       box-shadow: 0px 17px 10px 32px rgba(0, 0, 0, 0.2);
+      height: 170px;
       // visibility: visible;
-      display: none;
+      display: block;
       .blank_div {
+        display: none;
+      }
+      .copy {
+        width: 250px;
+      }
+      .hidden_title {
         display: none;
       }
     }
@@ -155,12 +176,15 @@
       top: 114px;
       left: 32px;
 
-      .first_blank {
+      .first_blank,
+      .third_blank {
         display: flex;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
-      .second_blank {
+      .second_blank,
+      .fourth_blank {
         display: flex;
+        margin-bottom: 20px;
       }
 
       .blank_right {
@@ -173,9 +197,13 @@
 
       .row1,
       .row2,
-      .row3 {
+      .row3,
+      .row4 {
         display: flex;
         margin-bottom: 8px;
+      }
+      .row4 {
+        margin-top: 35px;
       }
       .small_rec1 {
         width: 65px;
@@ -188,7 +216,7 @@
         width: 196px;
         top: 114px;
         height: 22px;
-        // margin-left: 10px;
+
         background: #171717;
       }
 
@@ -218,13 +246,14 @@
         background: #171717;
         // display: none;
       }
-
-      .hr_line {
+      .hr_mb_line {
         position: absolute;
         border: 0.5px solid #454c53;
-        top: 36px;
-        width: 116%;
-        left: -46px;
+
+        top: 98px;
+        width: 110%;
+
+        left: -15px;
       }
     }
   }
@@ -232,17 +261,17 @@
 
 @media screen and (min-width: 769px) {
   .carousel-container {
-    position: relative;
-    // align-items: center;
-    margin: 20px auto -20px auto;
-
+    // margin-top: 0;
+    margin-bottom: -20px;
+    height: 60%;
+    .getStarted-button {
+      display: none;
+    }
     .card-carousel {
-      position: relative;
+      // margin-top: -45px;
+      margin-bottom: 115px;
+      height: 320px;
 
-      .card {
-        width: 960px;
-        top: 100px;
-      }
       .card-carousel-btn {
         border-radius: 2px;
         font-weight: 400;
@@ -251,6 +280,7 @@
         padding: 8px 20px;
         top: 35px;
         right: 58px;
+        display: block;
       }
 
       .card-title {
@@ -267,7 +297,7 @@
       }
       .copy {
         margin: 60px 25px 0 25px;
-        height: 140px;
+        height: 250px;
         width: 859px;
       }
 
@@ -278,7 +308,7 @@
       }
 
       .card.active {
-        height: 220px;
+        height: 330px;
         width: 960px;
       }
       .card.active .hidden_title {
@@ -288,7 +318,7 @@
       .card.next {
         width: 774px;
 
-        display: block;
+        // display: block;
         .copy {
           border: none;
         }
@@ -300,8 +330,9 @@
 
       .card.prev {
         width: 660px;
+        // border: 1px solid #222d33;
 
-        display: block;
+        // display: block;
         .copy {
           border: none;
         }
@@ -323,13 +354,21 @@
         .desktop_blank {
           display: block;
         }
+        .hr_mb_line {
+          display: none;
+        }
 
-        .hr_line {
+        .hr,
+        .hr2 {
           position: absolute;
-          // border: 1px solid #454c53;
-          border: 1px solid #171717;
+          border: 0.5px solid #171717;
+          left: -46px;
+          top: 44px;
 
           width: 109%;
+        }
+        .hr2 {
+          top: 144px;
         }
       }
     }
