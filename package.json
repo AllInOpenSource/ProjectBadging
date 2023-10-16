@@ -43,7 +43,8 @@
     "react-responsive": "9.0.2",
 >>>>>>> main
     "react-router-dom": "^6.10.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "remarkable": "2.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
